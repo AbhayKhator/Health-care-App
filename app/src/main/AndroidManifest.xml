@@ -15,6 +15,12 @@
         android:theme="@style/Theme.HealthIsWealth"
         tools:targetApi="31">
         <activity
+            android:name=".Feed2"
+            android:exported="false" />
+        <activity
+            android:name=".Feed1"
+            android:exported="false" />
+        <activity
             android:name=".rssFeed"
             android:exported="false" />
         <activity

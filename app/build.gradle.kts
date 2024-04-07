@@ -51,7 +51,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
     implementation(files("libs/jsoup-1.17.2.jar"))
-
+    implementation("androidx.appcompat:appcompat:1.3.1")
 
 }
 
