@@ -12,10 +12,12 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 
+
 public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth Auth;
     Button Logout;
+    Button Rssfeed;
     Button sendMail;
     TextView Mail;
     FirebaseUser user;
@@ -31,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         Mail= findViewById(R.id.show_mail);
         user = Auth.getCurrentUser();
         sendMail= findViewById(R.id.Btn_mail);
+        Rssfeed = findViewById(R.id.RssActiv);
+
 
 
 
@@ -49,6 +53,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
                 Intent intent2 = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent2);
+                finish();
+            }
+
+        });
+        Rssfeed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(getApplicationContext(), com.example.healthiswealth.rssFeed.class);
                 startActivity(intent2);
                 finish();
             }

@@ -4,22 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1C1C1C"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
 
     <TextView
         android:id="@+id/Welcome"
-        android:layout_width="429dp"
-        android:layout_height="88dp"
-        android:background="@color/black"
-        android:backgroundTint="#505050"
+        android:layout_width="472dp"
+        android:layout_height="89dp"
+        android:background="@drawable/back1111"
         android:backgroundTintMode="src_over"
-        android:paddingLeft="30sp"
+        android:paddingLeft="45sp"
         android:paddingTop="10sp"
         android:text="Welcome"
         android:textColor="#FFFFFF"
-        android:textColorHint="#C36666"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,10 +43,11 @@
         android:id="@+id/Btn_Logout"
         android:layout_width="83dp"
         android:layout_height="34dp"
-        android:backgroundTint="#FF9500"
+        android:backgroundTint="@color/white"
         android:text="Logout"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="10sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.949"
@@ -60,10 +59,11 @@
         android:id="@+id/Btn_mail"
         android:layout_width="83dp"
         android:layout_height="34dp"
-        android:backgroundTint="#FF9500"
+        android:backgroundTint="@color/white"
         android:text="E-Mail"
-        android:textColor="@color/white"
+        android:textColor="#000000"
         android:textSize="10sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.949"
@@ -73,19 +73,33 @@
 
     <Button
         android:id="@+id/RssActiv"
-        android:layout_width="387dp"
+        android:layout_width="358dp"
         android:layout_height="42dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:backgroundTint="#FF9500"
+        android:backgroundTint="@color/white"
         android:text="RSS FEED"
+        android:textColor="#000000"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/Welcome"
-        app:layout_constraintVertical_bias="0.118" />
+        app:layout_constraintVertical_bias="0.493" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="358dp"
+        android:layout_height="277dp"
+        android:background="@drawable/back1111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Welcome"
+        app:layout_constraintVertical_bias="0.194"
+        app:srcCompat="@drawable/surgeon" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
