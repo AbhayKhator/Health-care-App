@@ -10,11 +10,11 @@
 
     <TextView
         android:id="@+id/Welcome"
-        android:layout_width="472dp"
-        android:layout_height="89dp"
+        android:layout_width="428dp"
+        android:layout_height="87dp"
         android:background="@drawable/back1111"
         android:backgroundTintMode="src_over"
-        android:paddingLeft="45sp"
+        android:paddingLeft="23sp"
         android:paddingTop="10sp"
         android:text="Welcome"
         android:textColor="#FFFFFF"
@@ -50,10 +50,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintHorizontal_bias="0.893"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.018" />
+        app:layout_constraintVertical_bias="0.013" />
 
     <Button
         android:id="@+id/Btn_mail"
@@ -66,14 +66,14 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintHorizontal_bias="0.893"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintVertical_bias="0.054" />
 
     <Button
         android:id="@+id/RssActiv"
-        android:layout_width="358dp"
+        android:layout_width="348dp"
         android:layout_height="42dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -90,8 +90,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="358dp"
-        android:layout_height="277dp"
+        android:layout_width="354dp"
+        android:layout_height="276dp"
         android:background="@drawable/back1111"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,6 +100,48 @@
         app:layout_constraintTop_toTopOf="@+id/Welcome"
         app:layout_constraintVertical_bias="0.194"
         app:srcCompat="@drawable/surgeon" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="115dp"
+        android:layout_height="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.643"
+        app:srcCompat="@drawable/map" />
+
+    <Button
+        android:id="@+id/Btn_Location"
+        android:layout_width="162dp"
+        android:layout_height="42dp"
+        android:backgroundTint="@color/white"
+        android:text="Current Location"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812" />
+
+    <TextView
+        android:id="@+id/CurrentLoacationTextbox"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back1111"
+        android:padding="8sp"
+        android:text="Your Current Location"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
